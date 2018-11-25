@@ -1,4 +1,9 @@
-runtime: php55
+runtime: php
+env: flex
+
+runtime_config:
+  document_root: web
+
 api_version: 1
 
 handlers:
