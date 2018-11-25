@@ -1,10 +1,5 @@
 runtime: php72
-env: flex
 
-runtime_config:
-  document_root: web
-
-api_version: 1
 
 handlers:
 - url: /
@@ -23,5 +18,5 @@ handlers:
   static_files: static/\1
   upload: static/.*\.(gif|png|jpg)$
 
-- url: /.*
-  script: not_found.php
+- url: .*
+  script: auto
